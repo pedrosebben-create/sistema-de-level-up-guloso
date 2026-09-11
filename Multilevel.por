@@ -1,17 +1,20 @@
 programa {
+  inclua biblioteca Matematica  
   funcao inicio() {
     cadeia char
-    inteiro xp
+    inteiro xp, lv
 
     escreva("Type your name: ")
     leia(char)
 
-    escreva("What is your character's current XP?")
+    escreva("How much XP have you gained?")
     leia(xp)
+
+    lv=xp/100
 
 
     se (xp>=100){
-       escreva ("Your character has leveled up!")
+       escreva ("Your character has leveled up to level ", Matematica.arredondar(lv, 0), "!")
 
     }
 
